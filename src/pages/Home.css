@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Home-custom-background {
+  background-image: url('../assets/background.jpg'); /* Use correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full viewport height */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  filter: brightness(0.9) blur(0.5px); /* Combine filters */
+  padding: 2rem 1rem; /* Add padding for spacing if needed */
+}

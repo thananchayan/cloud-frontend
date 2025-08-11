@@ -1,0 +1,41 @@
+.navbar{
+    height: 100px;
+    display: flex;
+    width: 100%;
+    
+}
+
+.navbar-brand{
+    margin-left: 10px;
+    border-color: black;
+    border: 2px;
+}
+
+.btn btn-primary{
+    color: white;
+    font-size:large;
+    
+    
+    
+
+}
+
+
+.ml-auto{
+    align-items:flex-end;
+    display: flex;
+    justify-items: end;
+    margin-left: 900px;
+
+   
+
+    
+}
+
+.buttons{
+    align-items: flex-start;
+}
+.bg-navy {
+    background-color: navy;
+    background-image: linear-gradient(180deg, #1DC690 0%, navy 100%)
+  }

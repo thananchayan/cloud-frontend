@@ -1,0 +1,43 @@
+/* BookTicket.css */
+.BookTicket-custom-background {
+  background-image: url("../assets/background.jpg"); /* Replace with your background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+
+}
+
+.booking-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+.booking-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.booking-card .form-label {
+  font-weight: bold;
+  color: #333;
+}
+@media print {
+  nav, .btn, .ml-auto {
+    display: none !important;
+  }
+
+  .BookTicket-custom-background {
+    background: white !important;
+  }
+
+  body {
+    margin: 0;
+  }
+}

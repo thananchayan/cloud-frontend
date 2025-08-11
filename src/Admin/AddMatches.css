@@ -1,0 +1,43 @@
+.bg-navy {
+    background-color: navy;
+    background-image: linear-gradient(180deg, #1DC690 0%, navy 100%)
+  }
+
+
+  
+.custom-form {
+  background-color: lightblue; 
+  border-radius: 10px; 
+  margin-top: 0;
+}
+
+.custom-form .form-label {
+  font-weight: bold; 
+}
+
+.custom-form .form-control {
+  border: 1px solid #ddd; 
+}
+
+.custom-form button[type="submit"] {
+  background-color: #007bff; 
+  color: white; 
+}
+.custom-form button[type="submit"]:hover {
+  background-color: #0056b3; 
+}
+
+.custom-form a.btn-outline-danger {
+  color: #dc3545; 
+}
+
+.custom-form a.btn-outline-danger:hover {
+  color: #c82333; 
+}
+
+
+.form-background{
+  margin-top: 0px;
+  background-image: linear-gradient(180deg, #1DC690 0%, navy 100%)
+  
+}

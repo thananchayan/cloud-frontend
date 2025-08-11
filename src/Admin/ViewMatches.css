@@ -1,0 +1,19 @@
+.detail-label{
+    font-weight: bold;
+}
+
+.view-user-container{
+    align-items: center;
+    justify-content:flex-start;
+    margin:auto;
+}
+.card shadow{
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.bg-navy {
+    background-color: navy;
+    background-image: linear-gradient(180deg, #1DC690 0%, navy 100%)
+  }

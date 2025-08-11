@@ -1,0 +1,97 @@
+.navbar navbar-expand-lg bg-primary {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    
+}
+
+.navbar-brand{
+    margin-left: 10px;
+   
+
+}
+
+.ml-auto{
+    align-items:flex-end;
+    display: flex;
+    justify-content:flex-end;
+    /* justify-items: end; */
+     margin-left:auto;
+     padding-left: 20px;
+    
+}
+
+.buttons{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.booking-background{
+    background-image: url('../assets/background.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Adjust to your needs */
+    background-position: center; /* Adjust to your needs */
+    /* Other background properties can be added here */
+    height: 600px;
+    display:flex;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(0.9);
+  }
+
+  .content{
+    margin-left:100px;
+    margin-top: 100px;
+    text-align: left;
+  }
+
+  .card-header{
+    /* background-image: linear-gradient(180deg, #1DC690 0%, #D4F1F4 100%);   */
+    background-image: linear-gradient(180deg, #1DC690 0%, navy 100%)
+
+  }
+
+  .card-footer text-center{
+    align-items: center;
+  }
+  .bg-navy {
+    background-color: navy;
+    background-image: linear-gradient(180deg, #1DC690 0%, navy 100%)
+  }
+
+
+  .input {
+    margin: 10px 0;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .number-input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .number-input:focus {
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+  }
+  
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+/* Ensure full page layout allows height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix background section */
+.Matches-custom-background {
+  background-image: url('../assets/background.jpg'); /* Check path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Use viewport height */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.9) blur(0.5px); /* Combine filters */
+  padding: 2rem; /* Add spacing around content */
+}
+
+/* Remove unnecessary max-content from container */
+.container {
+  max-width: 1000px; /* or any desired width */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85); /* optional: readable table */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
