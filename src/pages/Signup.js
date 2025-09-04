@@ -49,7 +49,7 @@ export default function Signup() {
     if (!validate()) return;
 
     try {
-      await axios.post("http://localhost:8080/users/register", {
+      await axios.post("/api/users/register", {
         email,
         password,
       });
