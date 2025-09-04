@@ -16,9 +16,10 @@ export default function AddMatches() {
     totalSeats: "",
     price: "",
     description: "",
+    imageUrl:""
   });
 
-  const { teamA, teamB, format, location, matchDate, time, totalSeats, price, description } =
+  const { teamA, teamB, format, location, matchDate, time, totalSeats, price, description,imageUrl } =
     matchData;
 
   const onInputChange = (e) => {
@@ -44,6 +45,7 @@ const onSubmit = async (e) => {
       totalSeats: parseInt(totalSeats),
       price: parseFloat(price) || 0,
       description,
+      imageUrl
     };
 
     console.log("Sending payload:", payload);
@@ -192,6 +194,18 @@ const onSubmit = async (e) => {
                 value={description}
                 onChange={onInputChange}
               />
+            </div>
+                   <div className="mb-3">
+              <label className="form-label">Enter Image Url</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter Image Url"
+                name="imageUrl"
+                value={imageUrl}
+                onChange={onInputChange}
+              />
+        
             </div>
 
             <button type="submit" className="btn btn-outline-primary">

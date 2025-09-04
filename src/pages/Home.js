@@ -73,7 +73,7 @@ export default function Home() {
           <div
             className="card m-3"
             key={match.id}
-            style={{ width: "18rem", height: "30rem" }}
+            style={{ width: "18rem", height: "32rem" }}
           >
             <img
               className="card-img-top"
