@@ -22,7 +22,6 @@ html, body {
 
 /* Remove unnecessary max-content from container */
 .container {
-  max-width: 1000px; /* or any desired width */
   width: 100%;
   background: rgba(255, 255, 255, 0.85); /* optional: readable table */
   padding: 1rem;
