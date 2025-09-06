@@ -38,7 +38,9 @@ export default function Signup() {
       return false;
     }
     if (password.length < 6) {
-      toast.error("Password should be at least 6 characters.", { position: "top-center" });
+      toast.error("Password should be at least 6 characters.", {
+        position: "top-center",
+      });
       return false;
     }
     return true;
@@ -49,7 +51,7 @@ export default function Signup() {
     if (!validate()) return;
 
     try {
-      await axios.post("/api/users/register", {
+      await axios.post("https://localhost:8443/users/register", {
         email,
         password,
       });
@@ -79,10 +81,22 @@ export default function Signup() {
 
         <div style={{ marginLeft: "10px" }}>
           <h1 style={{ margin: 0 }}>
-            <span style={{ color: "#FFD700", fontSize: "2em", fontFamily: "Times New Roman" }}>
+            <span
+              style={{
+                color: "#FFD700",
+                fontSize: "2em",
+                fontFamily: "Times New Roman",
+              }}
+            >
               Cric
             </span>
-            <span style={{ color: "#FFFFFF", fontSize: "1.2em", fontFamily: "Times New Roman" }}>
+            <span
+              style={{
+                color: "#FFFFFF",
+                fontSize: "1.2em",
+                fontFamily: "Times New Roman",
+              }}
+            >
               TicketHub
             </span>
           </h1>

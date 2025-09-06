@@ -28,7 +28,7 @@ const Login = () => {
 
     try {
       // 🔹 Call user-service via API Gateway
-      const response = await axios.post("http://localhost:8080/users/login", {
+      const response = await axios.post("https://localhost:8443/users/login", {
         email: loginUserName,
         password: loginPassword,
       });

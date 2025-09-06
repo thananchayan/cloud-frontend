@@ -39,7 +39,7 @@ const onSubmit = async (e) => {
     console.log("Submitting match data:", matchData);
 
     await axios.put(
-      `http://localhost:8080/matches/${id}`,
+      `https://localhost:8443/matches/${id}`,
       matchData,
       {
         headers: {
@@ -55,7 +55,7 @@ const onSubmit = async (e) => {
 };
 const loadMatch = async () => {
   const token = localStorage.getItem("token");
-  const result = await axios.get(`http://localhost:8080/matches/${id}`, {
+  const result = await axios.get(`https://localhost:8443/matches/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },

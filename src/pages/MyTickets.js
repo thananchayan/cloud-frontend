@@ -19,7 +19,7 @@ export default function MyTickets() {
   const fetchTickets = async () => {
     try {
       const token = localStorage.getItem("token");
-      const ticketRes = await axios.get("http://localhost:8080/tickets/my", {
+      const ticketRes = await axios.get("https://localhost:8443/tickets/my", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -29,7 +29,7 @@ export default function MyTickets() {
       const matchDetails = {};
       for (let ticket of ticketList) {
         if (!matchDetails[ticket.matchId]) {
-          const matchRes = await axios.get(`http://localhost:8080/matches/${ticket.matchId}`, {
+          const matchRes = await axios.get(`https://localhost:8443/matches/${ticket.matchId}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },

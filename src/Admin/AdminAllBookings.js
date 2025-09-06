@@ -19,7 +19,7 @@ export default function AdminAllBookings() {
   const loadTickets = async () => {
     try {
       const token = localStorage.getItem("token");
-      const result = await axios.get("http://localhost:8080/tickets/all", {
+      const result = await axios.get("https://localhost:8443/tickets/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -30,7 +30,7 @@ export default function AdminAllBookings() {
       setTickets(ticketsData);
 
       const matchPromises = ticketsData.map((ticket) =>
-        axios.get(`http://localhost:8080/matches/${ticket.matchId}`, {
+        axios.get(`https://localhost:8443/matches/${ticket.matchId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

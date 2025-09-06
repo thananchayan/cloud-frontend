@@ -43,7 +43,7 @@ export default function Booking() {
   }, []);
 
   const loadMatches = async () => {
-    const result = await axios.get(`http://localhost:8080/match/${id}`);
+    const result = await axios.get(`https://localhost:8443/match/${id}`);
     setMatches(result.data);
   };
 
@@ -95,7 +95,7 @@ export default function Booking() {
     if (handleClick()) {
       const newAvailableSeats = availableSeats - orderedTickets;
       try {
-        const response = await axios.put(`http://localhost:8080/match/${id}`, {
+        const response = await axios.put(`https://localhost:8443/match/${id}`, {
           match:matches.match,
           format:matches.format,
           location:matches.location,

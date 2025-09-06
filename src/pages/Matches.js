@@ -16,7 +16,7 @@ export default function Matches() {
   const loadMatches = async () => {
     try {
       const token = localStorage.getItem("token");
-      const result = await axios.get("http://localhost:8080/matches", {
+      const result = await axios.get("https://localhost:8443/matches", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

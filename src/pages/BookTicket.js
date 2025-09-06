@@ -17,7 +17,7 @@ export default function BookTicket() {
 
     try {
       await axios.post(
-        "http://localhost:8080/tickets/book",
+        "https://localhost:8443/tickets/book",
         { matchId: parseInt(id), seatNumber },
         {
           headers: {
