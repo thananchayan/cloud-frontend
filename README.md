@@ -1,6 +1,9 @@
-# CricTicketHub Frontend 🎟️
+# CricTicketHub Frontend 🎨
 
-This is the React.js based frontend for the **CricTicketHub** project.
+This repository contains the **frontend** for the CricTicketHub project.  
+It is built with **React.js** and communicates with the backend microservices through the API Gateway.  
+The UI provides user registration, login, match browsing, ticket booking, and admin management features.
+
 
 ## 🚀 Features
 - Admin and user dashboards
